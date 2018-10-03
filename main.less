@@ -1,0 +1,463 @@
+*{
+    resize:none !important;
+
+}
+* label{
+    font-size: 25px;
+    font-weight: 600;
+}
+input:focus{
+outline: none;
+}
+* input{
+    border:none;
+    background-color: rgba(253, 253, 253, 0);
+    font-size: 21px;
+}
+////////////////////////////////////////////////////////
+body{
+    background-image: url(/image-files/white-wall.jpg)
+}
+
+//----------CSS for button on the side for moving to deleted notes section----------
+#removedSection{
+    z-index: 1;
+    box-shadow: -10px -2px 25px black;
+    transition:1.5s ease-out;
+    position: fixed;
+    bottom: 5.1%;
+    right: -830px;
+    height: 1000px;
+    transform: rotate(270deg);
+    width: 800px;
+    font-size: 50px;
+    border-radius: 112px 112px 11px 0px;
+    background-color: rgba(0, 0, 0, 0.404);
+    text-align: center;
+    span{
+        letter-spacing: 10px;
+        margin-top: 60%;
+        color: rgba(54, 54, 54, 0.603);
+    }
+
+} 
+#removedSection:hover{
+    box-shadow: -1px -2px 25px black;
+    user-select: none;
+    cursor: pointer;
+    transition:0.7s ;
+    position: fixed;
+    bottom: 5.1%;
+    right: -790px;
+    transform: rotate(270deg);
+    font-size: 50px;
+    border-radius: 112px 112px 11px 0px;
+    background-color: rgba(192, 192, 192, 0.794);
+    text-align: center;
+    span{
+        letter-spacing: 10px;
+        margin-top: 60%;
+        color: rgb(5, 5, 5);
+    }
+}
+#removedSection:active{
+    user-select: none;
+    cursor: pointer;
+    transition:0.1s ;
+    position: fixed;
+    bottom: 5.1%;
+    right: -790px;
+    transform: rotate(270deg);
+    font-size: 50px;
+    border-radius: 112px 112px 11px 0px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    span{
+        transition: 20ms;
+        text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.815);
+        letter-spacing: 10px;
+        margin-top: 60%;
+        color: rgba(0, 0, 0, 0.596);
+    }
+}
+//----------End of CSS for button on the side for moving to deleted notes section----------
+
+
+//----------CSS for apps futures----------
+#appsFutures{
+    z-index: 1;
+    box-shadow: 10px -2px 25px black;
+    transition:1.5s ease-out;
+    position: fixed;
+    bottom: 35%;
+    left: -540px;
+    height: 420px;
+    transform: rotate(90deg);
+    width: 800px;
+    font-size: 50px;
+    border-radius: 112px 112px 11px 0px;
+    background-color: rgba(0, 0, 0, 0.404);
+    text-align: center;
+    span{
+        transition:0.5s;
+        letter-spacing: 10px;
+        margin-top: 60%;
+        color: rgba(54, 54, 54, 0.603);
+    }
+    p{
+        color: black;
+    }
+    h2{
+        color: black;
+
+    }
+    .pIn{
+        transform: rotate(270deg);
+        color: white;
+        font-size: 25px;
+        margin-top: 90px;
+        h2{
+            text-decoration-line: underline;
+        }
+    }
+} 
+#appsFutures:hover{
+    user-select: none;
+    box-shadow: 9px -2px 25px black;
+    transition:0.5s ease-out;
+    position: fixed;
+    bottom: 35%;
+    left: -200px;
+    height: 420px;
+    transform: rotate(90deg);
+    width: 800px;
+    font-size: 50px;
+    border-radius: 112px 112px 11px 0px;
+    background-color: rgba(192, 192, 192, 0.794);
+    text-align: center;
+    span{
+        transition:0.5s;
+        letter-spacing: 10px;
+        margin-top: 60%;
+        color: rgb(0, 0, 0);
+    }
+    p{
+        color: black;
+    }
+    h2{
+        color: black;
+
+    }
+    
+    
+}
+//----------End of CSS for apps futures----------
+
+header{
+    min-height: 50px;
+}
+#clockWraper{
+    user-select: none;
+    min-width: 180px;
+#clockGui{
+    font-size: 40px;
+    color: rgb(27, 27, 27);
+    font-weight: 600;
+}
+}
+main{
+    border:20px solid rgb(51, 34, 34);
+    border-radius: 5px;
+    box-shadow: 5px 10px 20px black;
+    background-image: url(/image-files/tile.jpg);
+    min-height: 900px;
+
+    .inputAlert{
+        margin:0px;
+        color:red;
+        font-family: cursive;
+        background-color: rgba(255, 0, 0, 0.411);
+        max-width: 300px;
+        border-radius: 10px;
+        border: 0.1px solid red;
+        box-shadow: 0px 0px 20px red;
+    }
+    #emptyDeletedAlert{
+        margin:100px 10px 10px 45px;
+        letter-spacing: 5px;
+        font-size: 60px;
+        font-weight: 700;
+        text-shadow: 10px 20px 30px;
+    }
+    //----------CSS for date input----------
+    
+    
+    .date{
+        margin-left: 4%;
+    }
+    
+    //----------End of CSS for date input----------
+
+
+    .alert-before-removing-note{
+        position:fixed; 
+        bottom:50%;left:50%;
+    }
+    //----------CSS for Trash symbol(removing notes)----------
+    
+    .fa-trash-alt{
+        opacity: 0;
+    }
+
+    .fa-trash-alt:hover{
+        cursor: pointer;
+        color:rgb(255, 255, 255);
+    }
+    .fa-trash-alt:active{
+            transition: 0.1s;
+            cursor: pointer;
+        color:red;
+        font-size: 3px;
+    }
+    //----------End of CSS for Trash symbol(removing notes)----------
+
+    .on-hover  .col-md{
+        transition: 1.2s;
+        opacity: 0.6;
+        border-radius: 10px;
+        border-radius: 0px;
+    }
+    .on-hover1{
+        transition: 1s;
+        opacity: 0;
+    }
+    .on-hover:hover i  {
+        transition: 0.4s;
+        opacity: 1;
+    }
+    .on-hover:hover .col-md{
+        transition: 1s;
+        opacity: 1;
+    }
+    .newTaskWraper{
+        margin:0%;
+        max-width:180px;
+        overflow: scroll;
+        background-image: url(/image-files/notebg.png);
+        background-repeat: no-repeat;
+        min-width: 150;
+    }
+    .newTaskWraperForRemovedNotes{
+        margin:0%;
+        max-width:180px;
+        overflow: scroll;
+        background-image: url(/image-files/notebg4.png);
+        background-repeat: no-repeat;
+        min-width: 150;
+    }
+    .newTaskWraper:hover{
+        margin:0%;
+        font-size: 10px;
+        max-width:180px;
+        box-shadow: 10px 10px 60px black;
+        border-radius: 50px;
+    }
+    .notes{
+        transition: 0.3s;
+        
+        border-radius: 0px 0px 360px 0px;
+        overflow: hidden;
+        height: 250px;
+        min-height:230px; 
+        min-width: 170px;
+        padding-top: 2%;
+    }
+    .notes:hover{
+        transition: 0.3s;
+        background-image: url(/image-files/notebg.png);
+        background-repeat: no-repeat;
+        border-radius: 0%;
+    }
+    .notesInsideText{
+        transition: 1s;
+        height: 150px;
+        max-width: 175px;
+        overflow: hidden;
+        max-height: 100px;
+    }
+    .notesInsideText:hover{
+        transition: 1s;
+        height: 150px;
+        max-width: 175px;
+        overflow-x: hidden;
+        max-height: 100px;
+        overflow-y: scroll;
+    }
+    .space{
+        height: 10px;
+    }
+    #GoalTime{
+        margin:0.5%;
+    }
+    .title{
+        background-image: url(/image-files/title.png);
+        background-repeat: no-repeat;
+        background-size: contain; 
+        background-position: center;
+        min-height: 50px;
+        margin:10px;
+    }
+    
+    #noteWraper{
+        background-image: url(/image-files/formbg\.jpg);
+        box-shadow: 2px 2px 20px black;
+        border-radius: 10px 10px 10px 111px;
+        background-position: initial;
+        max-width: 70%;   
+    }
+    #noteText:focus{
+        outline: none;
+    }
+    #noteText{
+        position: relative;
+        max-height: 500px;
+        border: none;
+        background-color: rgba(240, 248, 255, 0);
+        font-size: 23px;
+        width: 80%;
+        resize: none;
+        font-display: initial;
+    
+    }
+    .goal-wraper{
+        max-height: 80px;
+        margin: 1%;
+    }
+    .nameInput{
+        margin:15px;
+    }
+    #makeNote{
+        padding: 10px 35px 10px 35px;
+        margin: 2%;
+        transition: 1s;
+        outline: none;
+        border:none;
+        box-shadow: 6px 4px 15px black;
+        border-radius: 0px 20px 20px 150px;
+        background-color: rgb(80, 80, 80);
+        color:rgb(134, 134, 134);
+    }
+            #makeNote:hover{
+                cursor: pointer;
+                transition: 1s;
+                color:white;
+                background-color: black;
+            }
+            #makeNote:active{
+                transition: 0.100s;
+                color:white;
+                size: 20px;
+                background-color: rgb(255, 255, 255);
+            }
+            .date{
+                margin-bottom:20%;
+            }
+            #clearBtn{
+                margin-right: 50px;
+                height: 20px;
+                position: relative;
+                top: 400px;
+                left: -115px;
+                transform: rotate(90deg);
+                transition:1.2s;
+                border-radius: 25px 25px 1px 1px;
+                outline: none;
+                user-select: none;
+                border:none;
+                background-color: rgb(51, 34, 34);
+                color:rgb(255, 255, 255);
+                padding: 0px 70px 0px 70px;
+                font-size: 2px;
+                font-weight: 800;
+                &:hover{
+                    cursor: pointer;
+                    height: 20px;
+                    position: relative;
+                    top: 400px;
+                    left: -105px;
+                    transform: rotate(90deg);
+                    transition:1.2s;
+                    border-radius: 25px 25px 1px 1px;
+                    outline: none;
+                    user-select: none;
+                    border:none;
+                    background-color: rgb(51, 34, 34);
+                    color:rgb(255, 255, 255);
+                    padding: 0px 70px 0px 70px;
+                    font-size: 2px;
+                    font-weight: 800;
+                }
+                &:active{
+                    border-radius: 10px 10px 1px 1px;
+                    transition: 0.1s;
+                    color:rgba(255, 255, 255, 0.329);
+                }
+        }
+   
+}
+
+footer{
+    min-height: 50px;
+}
+
+//----------CSS for alert on removing box----------
+.alert-on-remove{
+    position: fixed;
+    top:40%;
+    left: 43%;
+    border:2px solid rgb(110, 110, 110);
+    box-shadow: 11px 11px 10px rgba(0, 0, 0, 0.335);
+    border-radius: 20px;
+    padding: 3%;
+    text-align: center;
+    color:white;
+    background-image:url(/image-files/tile.jpg);
+    max-width: 300px;
+    .col-md-6>button{
+        border: none;
+        border-radius: 30px;
+        transition: 0.4s;
+        background-color: rgba(83, 83, 83, 0.623);
+        margin: 1px;
+        color:rgb(255, 255, 255);
+        padding:30%;
+        outline: none;
+    }
+    .col-md-6>button:hover{
+        cursor: pointer;
+        border-radius: 10px;
+        transition: 0.4s;
+        background-color: rgb(0, 0, 0);
+        margin: 1px;
+        color:rgb(255, 255, 255);
+        padding:30%;
+    }
+    .col-md-6>button:active{
+        cursor: pointer;
+        border-radius: 10px;
+        transition: 0.4s;
+        background-color: rgb(255, 255, 255);
+        margin: 1px;
+        color:rgb(0, 0, 0);
+        padding:30%;
+    }
+}
+#overAll{
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 100%;    
+    min-height: 1860px;
+    background-color: rgba(0, 0, 0, 0.431);
+}
+//----------End of CSS for alert on removing box----------
